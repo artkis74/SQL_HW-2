@@ -5,6 +5,7 @@ name VARCHAR (60) NOT NULL
 
 CREATE TABLE IF NOT EXISTS Musical_style (
 musical_style_id SERIAL PRIMARY KEY,
+musicians_id INTEGER REFERENCES Musicians (musicians_id),
 style_name VARCHAR (60) NOT NULL
 );
 
