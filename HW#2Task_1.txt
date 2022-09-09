@@ -36,7 +36,7 @@ CONSTRAINT pk PRIMARY KEY (musicians_id, musical_style_id)
 CREATE TABLE IF NOT EXISTS CollectionTrack (
 tracks_id INTEGER NOT NULL REFERENCES Tracks(tracks_id),
 collection_id INTEGER NOT NULL REFERENCES Collections(collection_id),
-CONSTRAINT CollectionTrack_id PRIMARY KEY (tracks_id, collection_id))
+CONSTRAINT CollectionTrack_id PRIMARY KEY (tracks_id, collection_id)
 );
 
 CREATE TABLE IF NOT EXISTS MusiciansAlbums (
